@@ -1,0 +1,15 @@
+<!Doctype>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>test pranala</title>
+</head>
+<body>
+  <form action="#" th:action="@{/form}" method="POST" th:object="${form}">
+    <input type="text" th.field="*{number}">
+    <button th:method="POST" value="triangle">Triangle Form</button>
+    <button  th:method="POST" value="odd">Odd Numbers</button>
+    <button th:method="POST" value="prima" >Prima Numbers</button>
+  </form>
+</body>
+</html>
